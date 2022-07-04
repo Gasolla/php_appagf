@@ -1,2 +1,2 @@
 # php_appagf
-Gerenciador mrs para usu do app
+Gerenciador mrs para uso do app
