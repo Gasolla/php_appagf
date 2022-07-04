@@ -1,0 +1,8 @@
+{
+    "name": "vendor/coletor",
+    "description": "Descrição do projeto coletor",
+    "author": "Marcelo <your@email.here>",
+    "require": {
+        "picqer/php-barcode-generator": "v0.3"
+    }
+}

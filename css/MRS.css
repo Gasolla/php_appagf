@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+a{cursor: pointer;}
+button{cursor: pointer;}
+#espera{position:absolute; left:0;top:0;z-index:9000;background-color:#000;display:none;}
+#boxes .window{position:absolute;left:0;top:0;font-size: 23px;color: #fff;display:none;z-index:9999;padding:20px;}
+#boxes #dialogo{padding:10px;}
+html,body{width:100%;height: 100%;font-family: 'Noto Serif', serif; background-color: #171a1d;}
+.conteudo{height: auto; min-height: 250px; padding-bottom: 70px;}
+.container-color-white{color: white}
+.margim-footer{margin-bottom: 70px}
+.i-group{margin: 3px 15px 0 0;}
+.top-10{margin-top: 10px}
+.top-20{margin-top: 20px}
+.top-15{margin-top: 15px}
+.btn-upload{margin-top: 33px}
+.texto-branco{color: white}
+.copyright {background-color: #cccccc; color: #000;}
+.navbar{position: relative; min-height: 70px; height: auto;}
+.navbar-img{position: absolute; left: 10px; top: 5px; width: 100px; height: 60px;}
+.navbar-brand{ margin-right: 5%; }
+.div-nav{font-size: 19px; margin-top: 10px; margin-left: 100px; }
+.footer-filtro{margin-bottom: 0}
+.h3-1{margin-left: 0%; margin-top: 20px; font-weight: bold;}
+.link-voltar{margin-top: 30px; opacity: 1}
+.link-voltar:hover{opacity: 0.7}
+hr{color: white; background-color: white}
+.cabecalho{width: 100%; padding: 5px; background-color: #343a40; color: #cccccc; margin-top: 20px}
+.cabecalho a{width: auto; min-width: 83px; height: 25px; font-size: 13px; line-height: 18px; margin-right: 5px}
+.class-grid{border: 0px solid black; overflow-y: auto; width: 100%; max-height: 400px; margin-bottom: 10px}
+.th-grid{padding: 5px 10px 5px; font-weight: bold;}
+.th-grid-btn{padding: 5px 10px 5px; font-weight: bold; width:60px}
+.td-grid{ padding: 5px 10px 5px ; color: #171a1d; }
+.td-ckeck{margin-top: -10px; margin-left: 7px}
+.fa-trash-alt{color: red};
+.fa-thumbs-down{color: red};
+.red{color: red}
+.fa-edit{color: #993300}
+.fa-times{color: red}
+.fa-check{color: green}
+.top-50{margin-top: 50px}
+.i-group-pass{margin: 3px 0 0 15px;}
+.footer-incluirusuario{margin-bottom: 70px}
+.imput-calendario{height: 38px; width: 37.2px; color: #343a40; background-color: #DDD; border: solid 1px; border-color: #ccc; padding: 2px 0 0 4px; border-radius: 2px; display: flex; align-content: stretch}
+img{border-radius:10px;cursor:pointer;}
+#mapa{width: 100%; height: 380px; border: solid 1px; border-color: #ccc}
+.disabled{opacity: 0.5}
+.card-andamento{margin: 10px 0}
+.marginHorizontal-5{margin-top: 5px; margin-bottom: 5px}
+.form-login{color: #FFF}
+.observacao{color: red; font-size: 12px;}
+/*Visual da janela Modal*/
+.modalVisual{ /*Classe*/
+            display:none; /*Esconder a janela por padrão*/
+            position:fixed;/*Permanecer na posição fixa*/
+            z-index:1; /*Posicionar no topo da pilha*/
+            padding-top:100px;/*Margem interna superior*/
+            left:0; /*Posição X*/
+            top:0; /*Posição Y*/
+            width:100%; /*Largura total da tela*/
+            height:100%; /*Altura total da tela*/
+            overflow:auto; /*Barra de rolagem se necessário*/
+            background-color:rgba(0,0,0,0.8); /*Cor de fundo e opacidade de 80%*/
+}
+/*Conteúdo da Janela Modal (imagem)*/
+.modalConteudo{ /*Classe*/
+            margin:auto; /*Margens em auto para que o conteúdo fique no centro*/
+            display:block; /*Para que ocupe toda a linha e o próximo item passe para alinha de baixo*/
+            width:100%; /*Largura total disponível*/
+            max-width:800px; /*Largura máxima permitida, então width:100%; é igual a 800px*/
+}
+/*Texto da Imagem*/
+#txtImg{
+            margin:auto; /*Centralizar o conteúdo*/
+            display:block; /*Para que ocupe toda a linha e o próximo item passe para alinha de baixo*/
+            width:80%; /*Largura*/
+            max-width:700px; /*Largura máxima permitida*/
+            text-align:center; /*Alinhamento do texto ao centro*/
+            color:#ccc; /*Cor do texto*/
+            padding:10px 0; /*Margem interna*/
+            height:150px; /*Altura*/
+}
+/* Botão X para fechar */
+.fechar{ /*Classe*/
+            position:absolute; /*Permite o posicionamento do element usando top e left*/
+            top:15px; /*Posição Y*/
+            right:35px; /*Posição direita*/
+            color:#fff; /*Cor do texto*/
+            font-size:40px; /*Tamanho da fonte*/
+            font-weight:bold; /*Negrito*/
+            cursor:pointer; /*Tipo do cursor*/
+}
+@media(max-width:993px){
+    .div-nav{margin-top: 15px; margin-left: 10px;}
+    .footer-filtro{margin-bottom: 70px}
+}
+
+/* =============== Estilos do autocomplete =============== */
+.ui-autocomplete { 
+	background: #fff; 
+	border-top: 1px solid #ccc;
+	cursor: pointer; 
+	font: 15px 'Open Sans',Arial;
+	margin-left: 3px;
+	width: 493px !important;
+	position: fixed;
+}
+
+.ui-autocomplete .ui-menu-item { 
+	list-style: none outside none;
+	padding: 7px 0 9px 10px;
+}
+
+.ui-autocomplete .ui-menu-item:hover { background: #eee }
+
+.ui-autocomplete .ui-corner-all { 
+	color: #666 !important;
+	display: block;
+}
